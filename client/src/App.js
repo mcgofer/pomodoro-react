@@ -5,8 +5,8 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="app-content card card-block mx-auto">
-        <div className='card-body'>
+      <div className="app-content  mx-auto">
+        <div>
           <Timer />
         </div>
       </div>

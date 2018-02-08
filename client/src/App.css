@@ -1,13 +1,71 @@
-.app-content {
-  width: 600px;
-  margin-top: 100px;
-  padding: 40px;
+body {
+  background-image: url('http://louisanderson.co.uk/images/sliders/slide1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-@media (max-width: 650px) {
-  .app-content {
-    margin: 20px 20px 0;
-    width: auto;
-  }
+.form-section {
+  text-align: center;
+ 
 }
 
+.timer-circle {
+  height: 400px;
+  width: 400px;
+  border: white 3px solid;
+  border-radius: 50%;
+  text-align: center;
+  margin-bottom: 25px;
+  background-color: #332728ad;
+  
+
+}
+.timer-circle  h2 {
+  margin: auto;
+  font-size: 60px;
+  color: white;
+  opacity: 0.8;
+  line-height: 1;
+  
+  text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+  font-family: 'Muli', sans-serif;
+}
+.heading {
+  padding-top: 50px;
+  padding-bottom: 25px;
+  color: white;
+  opacity: 0.8;
+  line-height: 1;
+  
+  text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+  font-family: 'Black Ops One', cursive;
+  font-size: 85px; 
+}
+
+.start {
+  background-color: #064c8abf;
+  color: white;
+  text-transform: uppercase;
+  width: 80px;
+
+}
+
+.reset {
+  background-color: #bb0000d9;
+  color: white;
+  text-transform: uppercase;
+  width: 80px;
+}
+
+.set-timer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  opacity: 0.8;
+  line-height: 1;
+  
+  text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+  font-family: 'Black Ops One', cursive;
+  font-size: 65px; 
+
+}

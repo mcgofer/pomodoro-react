@@ -9,7 +9,7 @@ class TimerConfig extends Component {
     handleChange(event) {
         const newBaseTime = this.props.baseTime;
 
-        if (event.target.id === 'hours') newBaseTime.subtract(newBaseTime.get('hour'), 'hours').add(parseInt(event.target.value, 10), 'hours');
+     
         if (event.target.id === 'minutes') newBaseTime.subtract(newBaseTime.get('minutes'), 'minutes').add(parseInt(event.target.value, 10), 'minutes');
         if (event.target.id === 'seconds') newBaseTime.subtract(newBaseTime.get('seconds'), 'seconds').add(parseInt(event.target.value, 10), 'seconds');
 
@@ -19,34 +19,18 @@ class TimerConfig extends Component {
 
     render() {
         return (
-            <div>
+            <div className="form-section mx-auto">
                 <div className='row'>
-                    <h2 className="text-primary">Set Timer</h2>
+                    <h2 className="set-timer mx-auto">Set Timer</h2>
                 </div>
 
+    
                 <div className='row'>
-                    <div className="form-group">
-                        <div className='col-sm-3'>
-                            <label htmlFor='hours'>Hours</label>
-                        </div>
-                        <div className='col-sm-9'>
-                            <input
-                                id='hours'
-                                className='form-control'
-                                type='number'
-                                defaultValue={this.props.baseTime.get('hours')}
-                                onChange={this.handleChange}
-                            />
-                        </div>
-                    </div>
-                </div>
-
-                <div className='row'>
-                    <div className="form-group">
-                        <div className='col-sm-3'>
+                    <div className="form-group mx-auto">
+                        <div>
                             <label htmlFor='minutes'>Minutes</label>
                         </div>
-                        <div className='col-sm-9'>
+                        <div>
                             <input
                                 id='minutes'
                                 className='form-control'
@@ -59,11 +43,11 @@ class TimerConfig extends Component {
                 </div>
 
                 <div className='row'>
-                    <div className="form-group">
-                        <div className='col-sm-3'>
+                    <div className="form-group mx-auto">
+                        <div>
                             <label htmlFor='seconds'>Seconds</label>
                         </div>
-                        <div className='col-sm-9'>
+                        <div>
                             <input
                                 id='seconds'
                                 className='form-control'

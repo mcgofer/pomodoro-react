@@ -12,11 +12,11 @@ const TimerDisplay = (props) => (
         <div className="row mx-auto">
             {
                 (props.timerState === timerStates.COMPLETE)
-                && <iframe className="center-block youtube-responsive-width" height="315" src="https://www.youtube.com/embed/nrAgK0S9hx4?autoplay=1&start=104&controls=0&showinfo=0"></iframe>
+               
             }
         </div>
-        <div className='row'>
-            <h2 className="mx-auto">
+        <div className='row timer-circle mx-auto'>
+            <h2>
                 {`${leftPad(props.currentTime.get('hours'))}:${leftPad(props.currentTime.get('minutes'))}:${leftPad(props.currentTime.get('seconds'))}`}
             </h2>
         </div>

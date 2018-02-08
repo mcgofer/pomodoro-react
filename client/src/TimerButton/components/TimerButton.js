@@ -9,18 +9,18 @@ class TimerButton extends Component {
 
     getButton() {
         if (this.props.timerState === timerStates.NOT_SET)
-            return (<button className='btn btn-success mx-auto' onClick={this.props.startTimer}>
+            return (<button className='btn mx-auto start' onClick={this.props.startTimer}>
                     Start
                     </button>)
 
         if (this.props.timerState === timerStates.RUNNING)
-            return (<button className='btn btn-danger mx-auto' onClick={this.props.stopTimer}>
-                    Interrupt
+            return (<button className='btn  mx-auto reset' onClick={this.props.stopTimer}>
+                    Reset
                     </button>)
-        if (this.props.timerState === timerStates.COMPLETE)
-        return (<button className='btn btn-info mx-auto' onClick={this.props.stopTimer}>
-                Reset
-                </button>)
+        // if (this.props.timerState === timerStates.COMPLETE)
+        // return (<button className='btn  mx-auto reset' onClick={this.props.stopTimer}>
+        //         Reset
+        //         </button>)
 
     }
 
